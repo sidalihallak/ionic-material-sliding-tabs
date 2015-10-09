@@ -29,7 +29,7 @@
   <body ng-app="starter" ng-controller="IndexCtrl">
 
     <ion-pane>
-      <ion-header-bar class="bar-positive not-casting-shadow">
+      <ion-header-bar class="bar-balanced not-casting-shadow">
         <h1 class="title">Ionic Blank Starter</h1>
       </ion-header-bar>
       <ion-content scroll="false">
@@ -37,52 +37,45 @@
           <div class="tsb-icons">
             <div class="tsb-ic-wrp">
               <ion-scroll direction="x" class="tsb-hscroll">
-                <a ripple href="javascript:;" class="ion-home1">HOME</a>
-                <a ripple href="javascript:;" class="ion-ios-game-controller-b1">GAME</a>
-                <a ripple href="javascript:;" class="ion-email1">EMAIL</a>
-                <a ripple href="javascript:;" class="ion-model-s1">CAR</a>
-                <a ripple href="javascript:;" class="ion-person1">PROFILE</a>
-                <a ripple href="javascript:;" class="ion-heart1">FAVOURITES</a>
-                <a ripple href="javascript:;" class="ion-chatbubbles1">CHARTS</a>
-                <a ripple href="javascript:;" class="ion-gear-b1">SETTINGS</a>
-                <a ripple href="javascript:;" class="ion-camera1">PHOTOS</a>
-                <a ripple href="javascript:;" class="ion-ios-paw1">PETS</a>
+                <a ripple href="javascript:;" >CATEGORIES</a>
+                <a ripple href="javascript:;" >HOME</a>
+                <a ripple href="javascript:;" >TOP PAID</a>
+                <a ripple href="javascript:;" >TOP FREE</a>
+                <a ripple href="javascript:;" >GROSSING</a>
+                <a ripple href="javascript:;" >TOP NEW PAID</a>
+                <a ripple href="javascript:;" >TOP NEW FREE</a>
+                <a ripple href="javascript:;" >TRENDING</a>
               </ion-scroll>
             </div>
           </div>
           <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
             <ion-slide>
+              <h3>Categories content</h3>
+            </ion-slide>
+            <ion-slide>
               <h3>Home content</h3>
             </ion-slide>
             <ion-slide>
-              <h3>Games content</h3>
+              <h3>Top paid content</h3>
             </ion-slide>
             <ion-slide>
-              <h3>Mail content</h3>
+              <h3>Top free content</h3>
             </ion-slide>
             <ion-slide>
-              <h3>Car content</h3>
+              <h3>grossing content</h3>
             </ion-slide>
             <ion-slide>
-              <h3>Profile content</h3>
+              <h3>Top new paid content</h3>
             </ion-slide>
             <ion-slide>
-              <h3>Favourites content</h3>
-              <button ripple class="button button-positive">OMG a ripply button!</button>
+              <h3>Top new free content</h3>
 
             </ion-slide>
             <ion-slide>
-              <h3>Chats content</h3>
+              <h3>Trending content</h3>
             </ion-slide>
-            <ion-slide>
-              <h3>Settings content</h3>
-            </ion-slide>
-            <ion-slide>
-              <h3>Photos content</h3>
-            </ion-slide>
-            <ion-slide>
-              <h3>Pets content</h3>
-            </ion-slide>
+
+
           </ion-slide-box>
         </tab-slide-box>
       </ion-content>
