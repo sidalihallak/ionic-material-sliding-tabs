@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/ionic-material-design-lite/dist/css/ionic.material-design-lite.min.css"/>
+    <link rel="stylesheet" href="css/tabSlideBox.css"/>
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic-material-design-lite/dist/js/ionic.material-design-lite.min.js"></script>
+    <script src="js/tabSlideBox.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/ionic-ripple/ionic-ripple.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter" ng-controller="IndexCtrl">
+
+    <ion-pane>
+      <ion-header-bar class="bar-positive not-casting-shadow">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-header-bar>
+      <ion-content scroll="false">
+        <tab-slide-box>
+          <div class="tsb-icons">
+            <div class="tsb-ic-wrp">
+              <ion-scroll direction="x" class="tsb-hscroll">
+                <a ripple href="javascript:;" class="ion-home1">HOME</a>
+                <a ripple href="javascript:;" class="ion-ios-game-controller-b1">GAME</a>
+                <a ripple href="javascript:;" class="ion-email1">EMAIL</a>
+                <a ripple href="javascript:;" class="ion-model-s1">CAR</a>
+                <a ripple href="javascript:;" class="ion-person1">PROFILE</a>
+                <a ripple href="javascript:;" class="ion-heart1">FAVOURITES</a>
+                <a ripple href="javascript:;" class="ion-chatbubbles1">CHARTS</a>
+                <a ripple href="javascript:;" class="ion-gear-b1">SETTINGS</a>
+                <a ripple href="javascript:;" class="ion-camera1">PHOTOS</a>
+                <a ripple href="javascript:;" class="ion-ios-paw1">PETS</a>
+              </ion-scroll>
+            </div>
+          </div>
+          <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+            <ion-slide>
+              <h3>Home content</h3>
+            </ion-slide>
+            <ion-slide>
+              <h3>Games content</h3>
+            </ion-slide>
+            <ion-slide>
+              <h3>Mail content</h3>
+            </ion-slide>
+            <ion-slide>
+              <h3>Car content</h3>
+            </ion-slide>
+            <ion-slide>
+              <h3>Profile content</h3>
+            </ion-slide>
+            <ion-slide>
+              <h3>Favourites content</h3>
+              <button ripple class="button button-positive">OMG a ripply button!</button>
+
+            </ion-slide>
+            <ion-slide>
+              <h3>Chats content</h3>
+            </ion-slide>
+            <ion-slide>
+              <h3>Settings content</h3>
+            </ion-slide>
+            <ion-slide>
+              <h3>Photos content</h3>
+            </ion-slide>
+            <ion-slide>
+              <h3>Pets content</h3>
+            </ion-slide>
+          </ion-slide-box>
+        </tab-slide-box>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
